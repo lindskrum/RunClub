@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nasty 'Nati Run Club</title>
+</head>
+<body>
+<!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="logo">NASTY 'NATI RUN CLUB</h1>
+    <ul class="nav-links">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#join">Join Us</a></li>
+      <li class="ctn"><a href="#contact">Contact</a></li>
+    </ul>
+    <img src="./menu-btn.svg" alt="" class="menu-btn">
+  </nav>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h2>We Run This City</h2>
+      <div class="line"></div>
+      <h1>NASTY 'NATI RUN CLUB</h1>
+      <a href="#" class="ctn">Learn More</a>
+    </div>
+  </header>
+  <!-- Events -->
+  <section class="events" id="events">
+    <div class="title">
+      <h1>Upcoming Events</h1>
+      <div class="line"></div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="https://images.unsplash.com/photo-1501631454901-2fe040439c00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1095&q=80" alt="">
+        <h4>Four Bridge Loop</h4>
+        <p>The Taylor-Southgate Bridge, Purple People Bridge, Roebling Suspension Bridge and the CW Bailey Bridge</p>
+        <a href="#" class="ctn">RSVP</a>
+      </div>
+      <div class="col">
+        <img src="https://images.unsplash.com/photo-1585938389612-a552a28d6914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" alt="">
+        <h4>Eden Park</h4>
+        <p>A 4.6 mile loop through Cincy's most popular park</p>
+        <a href="#" class="ctn">RSVP</a>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section class="explore" id="about">
+    <div class="explore-content">
+      <h1>OUR COMMUNITY</h1>
+      <div class="line"></div>
+      <p>We welcome runners of all kinds. Whether this is your first time lacing
+        up or you've finished marathons, we've got a lane for you.<br><br>All we ask is
+        you be nice and love The Nasty 'Nati.</p>
+      <a href="#" class="ctn">Learn More</a>
+    </div>
+  </section>
+  <!-- Join Us -->
+  <section class="tours" id="join">
+    <div class="row">
+      <div class="col content-col">
+        <h1>JOIN US</h1>
+        <div class="line"></div>
+        <p>RSVP to one of our upcoming events and show up ready to run. It's that easy!
+        After that you'll be added to our GroupMe to keep you updated on all upcoming runs.
+        <br><br>We can't wait to run The 513 with you.</p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+      <div class="col image-col">
+        <div class="image-gallery">
+          <img src="https://images.unsplash.com/photo-1598014514548-27c9cd1c8466?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1602190420103-683df5093e86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1560073744-7643b964bdf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <section class="footer" id="contact">
+    <p>Cincinnati, OH USA | Phone: (513) 123-456 | Email: contact@nastynatirunclub.com</p>
+    <p>Copyright 2022 Nasty 'Nati Run Club</p>
+  </section>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navlinks =  document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click',()=>{
+      navlinks.classList.toggle('mobile-menu')
+    })
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
